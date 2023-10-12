@@ -10,7 +10,6 @@ html{
 body{
     background-color: rgb(218, 181, 215);
 }
-/* header */
 header{
     background-color: rgb(180, 146, 180);
     display: flex;
@@ -19,12 +18,10 @@ header{
     padding: 10px;
     flex-direction: column;
 }
-
 header img{
     width: 150px;
     height: 150px;
 }
-
 header nav ul{
     list-style: none;
 }
@@ -43,19 +40,6 @@ a{
 }
 div{
     font-size: 20px;
-}
-@media screen and (min-width: 768px){
-    header{
-        flex-direction: row;
-    }
-    header nav ul{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 10px;
-    }
-}
-@media screen and (min-width: 1024px){
-
 }
 /* main*/
 .card-ot{
@@ -189,6 +173,16 @@ footer{
     height: 50px;
     column-gap: 10px;
     row-gap: 5px;
+}
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
 }
 
 
