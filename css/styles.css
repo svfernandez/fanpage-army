@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 62.52%;
+}
+body{
+    background-color: rgb(218, 181, 215);
+}
+/* header */
+header{
+    background-color: rgb(180, 146, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+header img{
+    width: 150px;
+    height: 150px;
+}
+
+header nav ul{
+    list-style: none;
+}
+
+
+header nav ul li{
+    font-size: bold;
+}
+a:link{
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
+div{
+    font-size: 20px;
+}
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+    }
+    header nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+}
+@media screen and (min-width: 1024px){
+
+}
+/* main*/
+.card-ot{
+    display: flex;
+    justify-content: center;
+    margin: 60px;
+}
+.card-ot img{
+    width: 450px;
+    height: 450px;
+}
+.contenedor-flex{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px;
+}
+.card{
+    width: 400px;
+    height: 500px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.lineas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor-padre{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 60px;
+}
+
+.album{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    column-gap: 5px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.cover img{
+    width: 300px;
+    height: 300px;
+}
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    gap: 10px;
+}
+header{
+    background-color: rgb(116, 95, 134);
+    grid-area: header;
+}
+main{
+    background-color: rgb(156, 139, 172);
+    grid-area: main;
+}
+aside{
+    background-color: rgb(156, 139, 172);
+    grid-area: aside;
+}
+footer{
+    background-color: rgb(204, 180, 226);
+    grid-area: footer;
+}
+.solistas{
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 20px;
+    column-gap: 5px;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.solista img{
+    width: 300px;
+    height: 300px;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: medium;
+}
+.grilla-tres{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "header header header"
+    "main main aside"
+    "footer footer footer";
+    gap: 15px;
+}
+.grilla-cuatro{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas:
+    "header header header"
+    "main aside aside"
+    "footer footer footer";
+}
+/* footer */
+.position-fixed{
+    position: fixed;
+    width: 100px;
+    bottom: 20px;
+    right: 20px;
+}
+.position-fixed img{
+    width: 100px;
+}
+.contactos{
+    display: flex;
+    justify-content: center;
+}
+.redes img{
+    width: 50px;
+    height: 50px;
+    column-gap: 10px;
+    row-gap: 5px;
+}
+
+
+
+
