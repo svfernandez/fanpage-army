@@ -2,185 +2,158 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;;
 }
 html{
-    font-size: 62.52%;
+    font-size: 62.5%;
 }
 body{
-    background-color: rgb(218, 181, 215);
+    background-color: rgb(245, 245, 245);
 }
-header{
-    background-color: rgb(180, 146, 180);
-    display: flex;
-    justify-content: space-between;
+/*header general*/
+header nav div a img{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    flex-grow: 0;
+}
+.menu-ul{
     align-items: center;
-    padding: 10px;
-    flex-direction: column;
 }
-header img{
-    width: 150px;
-    height: 150px;
+.menu-ul li a{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
 }
-header nav ul{
-    list-style: none;
-}
-
-
-header nav ul li{
+/*main about*/
+.texto-h2{
     font-size: bold;
-}
-a:link{
-    color: black;
-    font-size: 20px;
-    text-decoration: none;
-}
-a{
-    color: black;
-}
-div{
-    font-size: 20px;
-}
-/* main*/
-.card-ot{
-    display: flex;
-    justify-content: center;
-    margin: 60px;
-}
-.card-ot img{
-    width: 450px;
-    height: 450px;
-}
-.contenedor-flex{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 60px;
-}
-.card{
-    width: 400px;
-    height: 500px;
-}
-.card img{
-    width: 100%;
-    height: 300px;
-}
-.lineas{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.contenedor-padre{
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    margin: 60px;
-}
-
-.album{
-    display: flex;
-    flex-flow: row wrap;
-    row-gap: 20px;
-    column-gap: 5px;
-    justify-content: flex-start;
-    gap: 20px;
-}
-.cover img{
-    width: 300px;
-    height: 300px;
-}
-.grilla{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "header header header"
-    "main main aside"
-    "footer footer footer";
-    gap: 10px;
-}
-header{
-    background-color: rgb(116, 95, 134);
-    grid-area: header;
-}
-main{
-    background-color: rgb(156, 139, 172);
-    grid-area: main;
-}
-aside{
-    background-color: rgb(156, 139, 172);
-    grid-area: aside;
-}
-footer{
-    background-color: rgb(204, 180, 226);
-    grid-area: footer;
+    font: 2em sans-serif;
 }
 .solistas{
     display: flex;
-    flex-flow: row wrap;
-    row-gap: 20px;
-    column-gap: 5px;
-    justify-content: flex-start;
-    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
 }
 .solista img{
-    width: 300px;
-    height: 300px;
+    width: 225px;
+    height: 225px;
 }
-.title{
+/*main discografia*/
+.discord{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     font-size: medium;
 }
-.grilla-tres{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "header header header"
-    "main main aside"
-    "footer footer footer";
-    gap: 15px;
+.title{
+    font-size: bold;
+    font: 1.2em sans-serif;
 }
-.grilla-cuatro{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, auto);
-    grid-template-areas:
-    "header header header"
-    "main aside aside"
-    "footer footer footer";
+.parrafo{
+    background-color: rgb(209, 209, 209);
 }
-/* footer */
-.position-fixed{
-    position: fixed;
-    width: 100px;
-    bottom: 20px;
-    right: 20px;
+main section p{
+    display: flex;
+    justify-content: center;
+    font-size: small;
 }
-.position-fixed img{
-    width: 100px;
+.album{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 5px;
+    gap: 20px;
+}
+.cover img{
+    width: 225px;
+    height: 225px;
+}
+/*main army falta*/
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cumpleaños img{
+    justify-content: center;
+    width: 75%;
+    height: 75vw;
+}
+
+
+/*main contacto*/
+.conteiner{
+    background-color: rgb(182, 180, 180);
+    font: 1.2em sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vw;
+}
+
+/*footer general*/
+footer{
+    width: 100%;
+    height: 10vw;
+    background-color: rgb(204, 204, 204);
 }
 .contactos{
     display: flex;
-    justify-content: center;
-}
-.redes img{
-    width: 50px;
-    height: 50px;
+    justify-content: end;
     column-gap: 10px;
     row-gap: 5px;
 }
+.redes img{
+    width: 30px;
+    height: 30px;
+}
+
+@media screen and (max-width: 991px){
+    .menu{
+        position: absolute;
+        top: 150px;
+        width: 100vw;
+}
+}
+
 @media screen and (min-width: 768px){
     header{
         flex-direction: row;
     }
     header nav ul{
         display: flex;
+        flex-direction: row;
         justify-content: space-evenly;
         gap: 10px;
+    }
+    /*about*/
+    .solista img{
+        width: 350px;
+        height: 350px;
+    }
+    /*discografia*/
+    .title{
+        font-size: large;
+    }
+    main section p{
+        font-size: medium;
+    }
+    /*contacto*/
+    .conteiner{
+        display: flex;
+        justify-content: center;
     }
 }
