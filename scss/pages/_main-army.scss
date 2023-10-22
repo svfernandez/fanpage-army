@@ -1,0 +1,20 @@
+/*main army*/
+.main-army {
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .flex-item {
+            .cumpleaños {
+                img {
+                    justify-content: center;
+                    width: 75%;
+                    height: 75vw;
+                }
+            }
+        }
+    }
+}

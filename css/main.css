@@ -1,5 +1,137 @@
-h1 {
-  color: red;
+@charset "UTF-8";
+/*reset*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+/*header general*/
+header {
+  background-color: rgb(245, 245, 245);
+}
+header nav div a img {
+  width: 100px;
+  height: 100px;
+}
+header nav div .menu {
+  flex-grow: 0;
+}
+header nav div .menu .menu-ul {
+  align-items: start;
+}
+header nav div .menu .menu-ul li a {
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* main about*/
+.main-about .texto-h2 {
+  font-size: bold;
+  font: 2em sans-serif;
+}
+.main-about .solistas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.main-about .solistas .solista img {
+  width: 225px;
+  height: 225px;
+}
+
+/*main discografía*/
+.main-discografia .discord {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: medium;
+}
+.main-discografia .discord .title {
+  font-size: bold;
+  font: 1.2em sans-serif;
+}
+.main-discografia .discord .title .parrafo {
+  background-color: rgb(245, 245, 245);
+}
+.main-discografia .discord .album {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 5px;
+  gap: 20px;
+}
+.main-discografia .discord .album .cover img {
+  width: 225px;
+  height: 225px;
+}
+.main-discografia .discord .spotify {
+  display: flex;
+  justify-content: center;
+  row-gap: 20px;
+  column-gap: 5px;
+  gap: 20px;
+}
+
+/*main army*/
+.main-army .flex-container {
+  display: flex;
+  flex-direction: column;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.main-army .flex-container .flex-item .cumpleaños img {
+  justify-content: center;
+  width: 75%;
+  height: 75vw;
+}
+
+/*main conmtacto*/
+.main-contacto .conteiner {
+  background-color: rgb(182, 180, 180);
+  font: 1.2em sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vw;
+}
+
+/*footer*/
+/*footer general*/
+footer {
+  width: 100%;
+  height: 10vw;
+  background-color: rgb(204, 204, 204);
+}
+footer .contactos {
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+  row-gap: 5px;
+}
+footer .contactos .redes img {
+  width: 30px;
+  height: 30px;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(245, 245, 245);
 }
 
 /*# sourceMappingURL=main.css.map */

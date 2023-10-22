@@ -1,0 +1,13 @@
+/*main conmtacto*/
+.main-contacto {
+    .conteiner {
+        background-color: rgb(182, 180, 180);
+        font: 1.2em sans-serif;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vw;
+    }
+}

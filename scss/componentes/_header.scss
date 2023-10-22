@@ -1,0 +1,27 @@
+/*header general*/
+header {
+    background-color: $color-principal;
+    nav{
+        div{
+            a{
+                img{
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+            .menu{
+                flex-grow: 0;
+                .menu-ul{
+                    align-items: start;
+                    li{
+                        a{
+                            color: black;
+                            font-size: 25px;
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

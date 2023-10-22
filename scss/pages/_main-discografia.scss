@@ -1,0 +1,43 @@
+/*main discografía*/
+.main-discografia {
+    .discord {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: medium;
+
+        .title {
+            font-size: bold;
+            font: 1.2em sans-serif;
+
+            .parrafo {
+                background-color: $color-principal;
+            }
+        }
+
+        .album {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 5px;
+            gap: 20px;
+
+            .cover {
+                img {
+                    width: 225px;
+                    height: 225px;
+                }
+            }
+        }
+
+        .spotify {
+            display: flex;
+            justify-content: center;
+            row-gap: 20px;
+            column-gap: 5px;
+            gap: 20px;
+        }
+    }
+}

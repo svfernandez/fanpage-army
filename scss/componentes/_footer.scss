@@ -1,0 +1,21 @@
+/*footer*/
+/*footer general*/
+footer {
+    width: 100%;
+    height: 10vw;
+    background-color: rgb(204, 204, 204);
+
+    .contactos {
+        display: flex;
+        justify-content: end;
+        column-gap: 10px;
+        row-gap: 5px;
+
+        .redes {
+            img {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}
