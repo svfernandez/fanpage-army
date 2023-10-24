@@ -12,7 +12,7 @@
 
 /*header general*/
 header {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(245, 216, 221);
 }
 header nav div a img {
   width: 100px;
@@ -60,7 +60,7 @@ header nav div .menu .menu-ul li a {
   font: 1.2em sans-serif;
 }
 .main-discografia .discord .title .parrafo {
-  background-color: rgb(245, 245, 245);
+  background-color: rgb(245, 216, 221);
 }
 .main-discografia .discord .album {
   display: flex;
@@ -110,20 +110,29 @@ header nav div .menu .menu-ul li a {
 
 /*footer*/
 /*footer general*/
-footer {
-  width: 100%;
-  height: 10vw;
-  background-color: rgb(204, 204, 204);
+.footer {
+  background-color: rgb(245, 216, 221);
 }
-footer .contactos {
+.footer .logo-footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  justify-items: center;
+}
+.footer .logo-footer img {
+  width: 35px;
+  height: 50px;
+  margin-top: 6px;
+}
+.footer .contactos {
   display: flex;
-  justify-content: end;
-  column-gap: 10px;
-  row-gap: 5px;
+  flex-direction: row;
+  justify-content: center;
+  gap: 5px;
 }
-footer .contactos .redes img {
-  width: 30px;
-  height: 30px;
+.footer .contactos .redes img {
+  width: 25px;
+  height: 25px;
 }
 
 html {
