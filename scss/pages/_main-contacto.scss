@@ -1,12 +1,11 @@
 /*main conmtacto*/
 .main-contacto {
+    font-family: $font-family-principal;
     min-height: 550px;
     display: flex;
+    @include flex(column, wrap, center, center);
     width: 100%;
     height: 100vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 12px;
     .invitacion{
         font-style: italic;

@@ -1,10 +1,8 @@
 /* main about*/
-body{
-    background-color: $color-principal;
-}
 .main-about {
+    font-family: $font-family-principal;
     section{
-        font-size: 1.1em;
+        font-size: 1em;
         h1{
             font-weight: 700;
         }
@@ -19,10 +17,7 @@ body{
     .solistas {
         font-style: italic;
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        align-items: center;
+        @include flex(row, wrap, space-evenly,center );
         h3{
             padding: 15px;
         }

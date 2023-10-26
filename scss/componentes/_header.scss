@@ -16,7 +16,7 @@ header {
                     li{
                         font-size: 1.2em;
                         a{
-                            color: black;
+                            color: nth($list: $colores, $n: 1);
                             font-weight: bold;
                         }
                     }

@@ -1,18 +1,17 @@
 /*main discografía*/
 .main-discografia {
+    font-family: $font-family-principal;
     .discord {
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        @include flex(column, wrap, center, center);
         font-weight: bold;
         h1{
-            font-weight: 700;
+            font-weight: 500;
             text-transform: uppercase;
             padding-top: 3px;
         }
         p{
-            font-size: 1.1em;
+            font-size: 1em;
             font-style: italic;
         }
         }
@@ -39,9 +38,7 @@
 
         .spotify {
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
+            @include flex(column, wrap, center, center);
             padding: 15px;
             column-gap: 5px;
             .canal{

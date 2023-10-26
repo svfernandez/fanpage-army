@@ -1,0 +1,8 @@
+html{
+    font-size: 62.5%;
+}
+body{
+    background-color: nth($list: $colores, $n: 4);
+    padding: 1em;
+    margin-bottom: 1em;
+}
