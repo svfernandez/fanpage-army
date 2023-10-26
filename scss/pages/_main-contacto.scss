@@ -1,13 +1,40 @@
 /*main conmtacto*/
 .main-contacto {
-    .conteiner {
-        background-color: rgb(182, 180, 180);
-        font: 1.2em sans-serif;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100vw;
+    min-height: 550px;
+    display: flex;
+    width: 100%;
+    height: 100vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    .invitacion{
+        font-style: italic;
+        font-weight: 650;
+        padding: 15px;
+        margin-top: 7px;
+        h1{
+            text-transform: uppercase;
+        }
+        p{
+            align-items: center;
+        }
     }
+    .formulario{
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        font-size: 1.4em;
+        font-weight: 650;
+        padding: 15px;
+        padding-bottom: 7px;
+        div{
+            .buttom{
+                background-image: linear-gradient(to right, rgb(252, 199, 208), lightgrey);
+                font-weight: 600;
+                align-items: center;
+            }
+        }
+    }
+
 }

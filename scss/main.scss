@@ -2,6 +2,7 @@
 //importar un submodulo//
 @import "utilities/reset";
 @import "utilities/variables";
+
 @import "utilities/lists";
 @import "componentes/header";
 @import "pages/main-about";
@@ -11,10 +12,3 @@
 @import "componentes/footer";
 @import "utilities/media-queries";
 
-html {
-    font-size: 62.5%;
-}
-
-body {
-    background-color: rgb(245, 245, 245);
-}

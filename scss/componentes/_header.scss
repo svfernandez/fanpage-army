@@ -1,6 +1,6 @@
 /*header general*/
 header {
-    background-color: $color-principal;
+    background-image: linear-gradient(to right, pink, lightgrey);
     nav{
         div{
             a{
@@ -12,11 +12,11 @@ header {
             .menu{
                 flex-grow: 0;
                 .menu-ul{
-                    align-items: start;
+                    align-items: flex-start;
                     li{
+                        font-size: 1.2em;
                         a{
                             color: black;
-                            font-size: 25px;
                             font-weight: bold;
                         }
                     }

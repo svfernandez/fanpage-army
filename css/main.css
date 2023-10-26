@@ -12,7 +12,7 @@
 
 /*header general*/
 header {
-  background-color: rgb(245, 216, 221);
+  background-image: linear-gradient(to right, pink, lightgrey);
 }
 header nav div a img {
   width: 100px;
@@ -22,25 +22,47 @@ header nav div .menu {
   flex-grow: 0;
 }
 header nav div .menu .menu-ul {
-  align-items: start;
+  align-items: flex-start;
+}
+header nav div .menu .menu-ul li {
+  font-size: 1.2em;
 }
 header nav div .menu .menu-ul li a {
   color: black;
-  font-size: 25px;
   font-weight: bold;
 }
 
 /* main about*/
-.main-about .texto-h2 {
-  font-size: bold;
-  font: 2em sans-serif;
+body {
+  background-color: lightgrey;
+}
+
+.main-about section {
+  font-size: 1.1em;
+}
+.main-about section h1 {
+  font-weight: 700;
+}
+.main-about section h2 {
+  text-decoration: underline;
+}
+.main-about section p {
+  text-align: center;
+  padding: 6px;
 }
 .main-about .solistas {
+  font-style: italic;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
+}
+.main-about .solistas h3 {
+  padding: 15px;
+}
+.main-about .solistas .solista h2 {
+  text-transform: uppercase;
 }
 .main-about .solistas .solista img {
   width: 225px;
@@ -53,16 +75,18 @@ header nav div .menu .menu-ul li a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: medium;
+  font-weight: bold;
 }
-.main-discografia .discord .title {
-  font-size: bold;
-  font: 1.2em sans-serif;
+.main-discografia .discord h1 {
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-top: 3px;
 }
-.main-discografia .discord .title .parrafo {
-  background-color: rgb(245, 216, 221);
+.main-discografia .discord p {
+  font-size: 1.1em;
+  font-style: italic;
 }
-.main-discografia .discord .album {
+.main-discografia .album {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -70,48 +94,134 @@ header nav div .menu .menu-ul li a {
   column-gap: 5px;
   gap: 20px;
 }
-.main-discografia .discord .album .cover img {
+.main-discografia .album .cover h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+.main-discografia .album .cover img {
   width: 225px;
   height: 225px;
 }
-.main-discografia .discord .spotify {
+.main-discografia .spotify {
   display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
-  row-gap: 20px;
+  padding: 15px;
   column-gap: 5px;
-  gap: 20px;
+}
+.main-discografia .spotify .canal {
+  background-image: linear-gradient(to right, pink, lightgrey);
+  border-radius: 12px;
+  margin: 20px;
+  padding: 15px;
+}
+.main-discografia .spotify .canal p {
+  text-align: start;
+  font-size: 1.4em;
 }
 
 /*main army*/
-.main-army .flex-container {
+.main-army {
   display: flex;
   flex-direction: column;
-  flex-flow: wrap;
+  justify-content: center;
+  min-height: 665px;
+}
+.main-army .contenedor-army {
+  gap: 1rem;
+  min-height: 100px;
+}
+.main-army .contenedor-army div {
+  width: 100%;
+}
+.main-army .contenedor-army div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 12px 7px 20px 1px rgb(8, 8, 8);
+}
+.main-army .contenedor-army .img-army {
+  position: relative;
+}
+.main-army .contenedor-army .img-army .texto-uno {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(107, 107, 107, 0.7), rgba(241, 241, 241, 0.7));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 1.5s;
+}
+.main-army .contenedor-army .img-army .texto-uno:hover {
+  opacity: 1;
+}
+.main-army .contenedor-flex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
-.main-army .flex-container .flex-item .cumpleaños img {
-  justify-content: center;
+.main-army .contenedor-flex .card {
   width: 75%;
-  height: 75vw;
+  height: 75%;
+  background-color: lightgrey;
+  border: 5px;
+}
+.main-army .contenedor-flex .card .buttom {
+  background-color: lightpink;
 }
 
 /*main conmtacto*/
-.main-contacto .conteiner {
-  background-color: rgb(182, 180, 180);
-  font: 1.2em sans-serif;
+.main-contacto {
+  min-height: 550px;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+.main-contacto .invitacion {
+  font-style: italic;
+  font-weight: 650;
+  padding: 15px;
+  margin-top: 7px;
+}
+.main-contacto .invitacion h1 {
+  text-transform: uppercase;
+}
+.main-contacto .invitacion p {
+  align-items: center;
+}
+.main-contacto .formulario {
+  width: 100%;
+  height: 50%;
+  align-items: center;
+  font-size: 1.4em;
+  font-weight: 650;
+  padding: 15px;
+  padding-bottom: 7px;
+}
+.main-contacto .formulario div .buttom {
+  background-image: linear-gradient(to right, rgb(252, 199, 208), lightgrey);
+  font-weight: 600;
+  align-items: center;
 }
 
 /*footer*/
 /*footer general*/
 .footer {
-  background-color: rgb(245, 216, 221);
+  background-image: linear-gradient(to right, pink, rgb(202, 200, 200));
 }
 .footer .logo-footer {
   display: grid;
@@ -135,12 +245,94 @@ header nav div .menu .menu-ul li a {
   height: 25px;
 }
 
-html {
-  font-size: 62.5%;
+@media screen and (max-width: 991px) {
+  .menu {
+    top: 150px;
+    width: 100vw;
+  }
 }
-
-body {
-  background-color: rgb(245, 245, 245);
+@media screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  /*main about*/
+  .main-about section p {
+    font-size: 1.5em;
+  }
+  .main-about .solistas h3 {
+    font-size: 1.5em;
+  }
+  /*main discografia*/
+  .main-discografia section {
+    font-size: 1.5em;
+  }
+  .main-discografia section h1 {
+    padding-top: 7px;
+  }
+  .main-discografia section .album .cover h2 {
+    font-weight: 600;
+  }
+  .main-discografia .spotify {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+  }
+  .main-discografia .spotify .canal {
+    background-image: linear-gradient(to right, pink, lightgrey);
+    border-radius: 12px;
+  }
+  .main-discografia .spotify .canal p {
+    font-size: 1.4em;
+  }
+  .main-discografia .spotify div iframe {
+    align-items: center;
+    padding: 5px;
+    width: 350px;
+    height: 250px;
+  }
+  /*main army*/
+  .main-army .contenedor-army {
+    font-weight: 700;
+    font-size: 2rem;
+    height: auto;
+  }
+  .main-army .contenedor-army p {
+    padding: 30px;
+  }
+  .main-army .contenedor-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 10px;
+  }
+  /*contacto*/
+  .main-contacto {
+    min-height: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    font-size: 1.5em;
+  }
+  .invitacion {
+    font-weight: 650;
+    padding: 20px;
+  }
+  .formulario {
+    width: 500px;
+    height: 100vw;
+    margin: 40px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

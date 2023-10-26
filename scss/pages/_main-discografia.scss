@@ -5,15 +5,16 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: medium;
-
-        .title {
-            font-size: bold;
-            font: 1.2em sans-serif;
-
-            .parrafo {
-                background-color: $color-principal;
-            }
+        font-weight: bold;
+        h1{
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 3px;
+        }
+        p{
+            font-size: 1.1em;
+            font-style: italic;
+        }
         }
 
         .album {
@@ -25,6 +26,10 @@
             gap: 20px;
 
             .cover {
+                h2{
+                    text-align: center;
+                    text-decoration: underline;
+                }
                 img {
                     width: 225px;
                     height: 225px;
@@ -34,10 +39,21 @@
 
         .spotify {
             display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
             justify-content: center;
-            row-gap: 20px;
+            padding: 15px;
             column-gap: 5px;
-            gap: 20px;
+            .canal{
+                background-image: linear-gradient(to right, pink, lightgrey);
+                border-radius: 12px;
+                margin: 20px;
+                padding: 15px;
+                p{
+                    text-align: start;
+                    font-size: 1.4em;
+                }
+            }
         }
-    }
 }
+

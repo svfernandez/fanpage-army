@@ -1,0 +1,109 @@
+@media screen and (max-width: 991px){
+    .menu{
+        top: 150px;
+        width: 100vw;
+}
+}
+@media screen and (min-width: 768px){
+    header{
+        flex-direction: row;
+        nav{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+    }
+    /*main about*/
+    .main-about{
+        section{
+            p{
+                font-size: 1.5em;
+            }
+        }
+        .solistas{
+            h3{
+            font-size: 1.5em;
+            }
+        }
+    }
+    /*main discografia*/
+    .main-discografia{
+        section{
+            font-size: 1.5em;
+            h1{
+                padding-top: 7px;
+            }
+            .album{
+                .cover{
+                    h2{
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+
+        .spotify {                
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 5px;
+            .canal{
+                background-image: linear-gradient(to right, pink, lightgrey);
+                border-radius: 12px;
+                p{
+                    font-size: 1.4em;
+                }
+            }
+            div{
+                iframe{
+                    align-items: center;
+                    padding: 5px;
+                    width: 350px;
+                    height: 250px;
+                }
+            }
+        }
+    }
+
+    /*main army*/
+    .main-army{
+        .contenedor-army{
+            font-weight: 700;
+            font-size: 2rem;
+            height: auto;
+            p{
+                padding: 30px;
+            }
+        }
+        .contenedor-flex{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 10px;
+        }
+
+    }
+
+    /*contacto*/
+    .main-contacto{
+        min-height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 15px;
+        align-items: center;
+        font-size: 1.5em;
+        }
+        .invitacion{
+            font-weight: 650;
+            padding: 20px;
+        }
+        .formulario{
+            width: 500px;
+            height: 100vw;
+            margin: 40px;
+        }
+}
