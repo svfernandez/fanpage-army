@@ -7,38 +7,47 @@
   font-family: "Indie Flower", cursive;
   font-family: "Lato", sans-serif;
   font-family: "Noto Sans", sans-serif;
-  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(241, 238, 238);
 }
 
 /*header general*/
 header {
+  margin: 0;
+  padding: 0;
   background-image: linear-gradient(to right, pink, lightgrey);
 }
 header nav div a img {
-  width: 100px;
-  height: 100px;
+  width: 35px;
+  height: 50px;
+  margin-top: 6px;
 }
-header nav div .menu {
+header nav .menu {
   flex-grow: 0;
 }
-header nav div .menu .menu-ul {
+header nav .menu .menu-ul {
   align-items: flex-start;
 }
-header nav div .menu .menu-ul li {
+header nav .menu .menu-ul li {
   font-size: 1.2em;
 }
-header nav div .menu .menu-ul li a {
-  color: black;
+header nav .menu .menu-ul li a {
+  color: rgb(22, 21, 21);
   font-weight: bold;
 }
 
 /* main about*/
-body {
-  background-color: lightgrey;
+.main-about {
+  font-family: "Poppins", sans-serif;
 }
-
 .main-about section {
-  font-size: 1.1em;
+  font-size: 1.5rem;
 }
 .main-about section h1 {
   font-weight: 700;
@@ -53,38 +62,146 @@ body {
 .main-about .solistas {
   font-style: italic;
   display: flex;
+  display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
+  align-items: space-evenly;
+  justify-content: center;
 }
 .main-about .solistas h3 {
   padding: 15px;
 }
-.main-about .solistas .solista h2 {
-  text-transform: uppercase;
+.main-about .solistas .solista {
+  position: relative;
+  margin: 5px;
 }
 .main-about .solistas .solista img {
   width: 225px;
   height: 225px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 12px 7px 20px 1px rgb(22, 21, 21);
+}
+.main-about .solistas .solista .texto-uno {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(107, 107, 107, 0.7), rgba(241, 241, 241, 0.7));
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+}
+.main-about .solistas .solista .texto-uno:hover {
+  opacity: 1;
+}
+.main-about .solistas .solista .texto-uno:hover h2 {
+  text-transform: uppercase;
+}
+.main-about .solistas .solista .texto-uno:hover p {
+  font-style: oblique;
+}
+
+.main-merch h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 10px;
+  font-weight: bolder;
+}
+.main-merch h3 {
+  font-weight: bold;
+  font-style: italic;
+  text-align: center;
+}
+.main-merch .carousel-item {
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: rgba(199, 179, 199, 0.568);
+}
+.main-merch .carousel-item img {
+  width: 30px;
+  height: 30px;
+}
+.main-merch .carousel-item h2 {
+  text-align: center;
+}
+.main-merch .carousel-item p {
+  text-align: center;
+}
+.main-merch .productos {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.main-merch .productos .card {
+  padding: 10px;
+  border: none;
+  background-color: rgb(241, 238, 238);
+  width: 75px;
+  height: 100%;
+}
+.main-merch .productos .card .card-title {
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 2px;
+  font-weight: bolder;
+}
+.main-merch .productos .card img {
+  width: 100%;
+  height: 100%;
+}
+.main-merch .productos .card .card-body {
+  text-align: start;
+  font-weight: lighter;
+}
+.main-merch .productos .card .card-body .precio {
+  font-weight: bolder;
+  color: rgb(119, 101, 119);
+}
+.main-merch .productos .card .card-body span {
+  font-style: oblique;
+}
+.main-merch .productos .card .card-body .buttom {
+  margin: 5px;
+  background-image: linear-gradient(to right, rgb(252, 199, 208), lightgrey);
+  font-weight: 600;
+  align-items: center;
 }
 
 /*main discografía*/
+.main-discografia {
+  font-family: "Poppins", sans-serif;
+}
 .main-discografia .discord {
   display: flex;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
   font-weight: bold;
+  font-size: 1.3em;
 }
 .main-discografia .discord h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  padding-top: 3px;
+  font-weight: bolder;
+  margin-top: 10px;
 }
 .main-discografia .discord p {
-  font-size: 1.1em;
+  text-align: center;
+  font-weight: lighter;
+  padding: 4px;
+}
+.main-discografia .discord p span {
   font-style: italic;
+  font-weight: bold;
 }
 .main-discografia .album {
   display: flex;
@@ -96,16 +213,23 @@ body {
 }
 .main-discografia .album .cover h2 {
   text-align: center;
-  text-decoration: underline;
+  color: rgb(119, 101, 119);
 }
 .main-discografia .album .cover img {
   width: 225px;
   height: 225px;
+  width: 225px;
+  height: 225px;
+  object-fit: cover;
+  border-radius: 4px;
+  box-shadow: 12px 7px 20px 1px rgb(22, 21, 21);
 }
 .main-discografia .spotify {
   display: flex;
+  display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
   justify-content: center;
   padding: 15px;
   column-gap: 5px;
@@ -123,99 +247,75 @@ body {
 
 /*main army*/
 .main-army {
+  font-family: "Poppins", sans-serif;
+}
+.main-army .proyectos {
+  font-size: 1.2em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  min-height: 665px;
-}
-.main-army .contenedor-army {
-  gap: 1rem;
-  min-height: 100px;
-}
-.main-army .contenedor-army div {
-  width: 100%;
-}
-.main-army .contenedor-army div img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  box-shadow: 12px 7px 20px 1px rgb(8, 8, 8);
-}
-.main-army .contenedor-army .img-army {
-  position: relative;
-}
-.main-army .contenedor-army .img-army .texto-uno {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: linear-gradient(rgba(107, 107, 107, 0.7), rgba(241, 241, 241, 0.7));
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: 0;
-  transition: opacity 1.5s;
-}
-.main-army .contenedor-army .img-army .texto-uno:hover {
-  opacity: 1;
-}
-.main-army .contenedor-flex {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  padding: 15px;
 }
-.main-army .contenedor-flex .card {
-  width: 75%;
-  height: 75%;
-  background-color: lightgrey;
-  border: 5px;
+.main-army .proyectos h1 {
+  border-radius: 3px;
+  background-color: rgba(199, 179, 199, 0.568);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bolder;
+  padding: 5px;
 }
-.main-army .contenedor-flex .card .buttom {
-  background-color: lightpink;
+.main-army .proyectos h2 {
+  text-align: center;
+}
+.main-army .proyectos p {
+  text-align: center;
+}
+.main-army .proyectos p span {
+  font-weight: bold;
+  font-style: italic;
+}
+.main-army .proyectos a img {
+  width: 285px;
+  height: 420px;
 }
 
 /*main conmtacto*/
 .main-contacto {
-  min-height: 550px;
-  display: flex;
-  width: 100%;
-  height: 100vw;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 12px;
+  margin-bottom: 0;
+  font-family: "Poppins", sans-serif;
+  min-height: 655px;
+  font-size: 1.3em;
 }
-.main-contacto .invitacion {
+.main-contacto h1 {
+  text-align: center;
+  font-weight: bolder;
   font-style: italic;
-  font-weight: 650;
-  padding: 15px;
-  margin-top: 7px;
+  margin: 25px;
+  background-color: rgb(197, 193, 197);
+  border-radius: 4px;
 }
-.main-contacto .invitacion h1 {
-  text-transform: uppercase;
-}
-.main-contacto .invitacion p {
-  align-items: center;
-}
-.main-contacto .formulario {
-  width: 100%;
-  height: 50%;
-  align-items: center;
-  font-size: 1.4em;
-  font-weight: 650;
-  padding: 15px;
-  padding-bottom: 7px;
-}
-.main-contacto .formulario div .buttom {
+.main-contacto .container {
   background-image: linear-gradient(to right, rgb(252, 199, 208), lightgrey);
-  font-weight: 600;
+  border-radius: 3px;
+  padding: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.main-contacto .container form .form-group {
+  align-content: center;
   align-items: center;
+  font-weight: 600;
+  padding: 7px;
+}
+.main-contacto .container form .form-group div .buttom {
+  width: 60px;
+  height: 100%;
+  background-color: rgb(241, 238, 238);
 }
 
 /*footer*/
@@ -232,7 +332,6 @@ body {
 .footer .logo-footer img {
   width: 35px;
   height: 50px;
-  margin-top: 6px;
 }
 .footer .contactos {
   display: flex;
@@ -241,11 +340,12 @@ body {
   gap: 5px;
 }
 .footer .contactos .redes img {
-  width: 25px;
-  height: 25px;
+  margin-top: 7px;
+  width: 30px;
+  height: 30px;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 890px) {
   .menu {
     top: 150px;
     width: 100vw;
@@ -255,7 +355,12 @@ body {
   header {
     flex-direction: row;
   }
-  header nav {
+  header nav div a img {
+    width: 50px;
+    height: 75px;
+  }
+  header nav ul {
+    font-size: large;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -268,14 +373,40 @@ body {
   .main-about .solistas h3 {
     font-size: 1.5em;
   }
-  /*main discografia*/
-  .main-discografia section {
-    font-size: 1.5em;
+  /*main merch*/
+  .main-merch {
+    font-size: 2rem;
   }
-  .main-discografia section h1 {
+  .main-merch .encabezado-merch {
+    margin-top: 10px;
+  }
+  .main-merch .encabezado-merch h1 {
+    text-transform: uppercase;
+  }
+  .main-merch .encabezado-merch h1 {
+    text-transform: uppercase;
+  }
+  .main-merch .productos {
+    display: flex;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+  .main-merch .productos .card-body .buttom {
+    font-size: 1em;
+  }
+  /*main discografia*/
+  .main-discografia .discord {
+    font-size: 1.4em;
+  }
+  .main-discografia .discord h1 {
     padding-top: 7px;
   }
-  .main-discografia section .album .cover h2 {
+  .main-discografia .discord .album .cover h2 {
     font-weight: 600;
   }
   .main-discografia .spotify {
@@ -293,45 +424,64 @@ body {
   .main-discografia .spotify .canal p {
     font-size: 1.4em;
   }
-  .main-discografia .spotify div iframe {
+  .main-discografia .spotify .padre-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5px;
+  }
+  .main-discografia .spotify .padre-grid div iframe {
     align-items: center;
     padding: 5px;
     width: 350px;
     height: 250px;
   }
   /*main army*/
-  .main-army .contenedor-army {
-    font-weight: 700;
-    font-size: 2rem;
-    height: auto;
+  .main-army .proyectos {
+    font-size: large;
   }
-  .main-army .contenedor-army p {
-    padding: 30px;
-  }
-  .main-army .contenedor-flex {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 10px;
+  .main-army .proyectos a img {
+    width: 450px;
+    height: 600px;
   }
   /*contacto*/
   .main-contacto {
-    min-height: 600px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 15px;
+    font-size: 2em;
+  }
+  .main-contacto .container {
     align-items: center;
-    font-size: 1.5em;
   }
-  .invitacion {
-    font-weight: 650;
-    padding: 20px;
+  .main-contacto .container form .form-group input {
+    font-size: 1em;
   }
-  .formulario {
-    width: 500px;
-    height: 100vw;
-    margin: 40px;
+  .main-contacto .container form div .buttom {
+    font-size: 1em;
+  }
+  /*footer*/
+  .footer .contactos .redes img {
+    width: 40px;
+    height: 40px;
+  }
+  .footer .privacidad {
+    font-size: medium;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .main-discografia .spotify .canal {
+    text-align: start;
+    max-inline-size: 350px;
+  }
+  .main-discografia .spotify .padre-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    padding: 5px;
+  }
+  .main-discografia .spotify .padre-grid div iframe {
+    align-items: center;
+    padding: 5px;
+    width: 350px;
+    height: 250px;
   }
 }
 

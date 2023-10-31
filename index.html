@@ -4,16 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BTS - BANGTAN ¿quiénes son?</title>
+
     <meta name="description"
         content="BTS, el grupo sur-coreano de 7 integrantes con linea de raperos y linea de vocales.">
     <meta name="keywords" content="bts jin namjoon suga jimin j-hope jungkook taehyung rap vocal">
     <!-- link de fuentes -->
-    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&family=Noto+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lato&family=Noto+Sans:wght@400;500;600;700&family=Poppins:ital,wght@0,400;0,500;0,700;1,600&display=swap"
+        rel="stylesheet">
     <!-- link de bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- link aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!-- link de css -->
     <link rel="stylesheet" href="./css/main.css">
     <title>BTS WORLD</title>
@@ -24,7 +27,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="./index.html"> <img src="./assets/bts-logo.png" alt="logo de bts"></a>
+                <a class="navbar-brand" href="./index.html"> <img src="./assets/logo-bts.png" alt="logo de bts"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,7 +39,7 @@
                             <a class="nav-link active" aria-current="page" href="./index.html">HOME</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="./pages/about.html">ABOUT</a>
+                            <a class="nav-link active" href="./pages/merch.html">MERCH</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link active" href="./pages/discografia.html">DISCOGRAFÍA</a>
@@ -52,26 +55,75 @@
             </div>
         </nav>
     </header>
-    <main class="container text-center">
-        <section class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-                <h2 class="fw_bolder fs-1 text-uppercased">BTS OT7</h2>
-                <img src="./assets/grupo-bts.jpg" class="w-100" alt="grupo completo">
+    <main class="main-about">
+        <section data-aos="fade-right">
+            <h1 class="text-center">BTS - BANGTAN</h1>
+            <h2 class="text-center">¿quiénes son?</h2>
+            <p class="texto-h2">Un grupo sur-coreano proveniente de la compañía <u>BigHit</u>, parte de HYBE LABELS,
+                conformado por siete integrantes <i>(Jin, Suga, J-Hope, RM, Jimin, V y Jungkook)</i>. El nombre del
+                grupo BTS,
+                es una abreviatura de la expresión coreana Bangtan Sonyeondan, que literalmente significa "Boy Scout a
+                prueba de balas". El grupo debuta el 13 de junio de 2013 con la canción "No More Dream".</p>
+        </section>
+        <section data-aos="fade-right" class="solistas">
+            <h3 class="text-center">Los miembros del grupo tuvieron su debut en solitario a lo largo del 2022 y lo que
+                lleva del 2023 con los siguientes albums.</h3>
+                
+            <div  data-aos="fade-right" class="solista">
+                <img src="./assets/jhope-solista.jpg" alt="album jack in the box de j-hope">
+                <div class="texto-uno">
+                    <h2 class="text-center">jack in the box</h2>
+                    <p>15 de Julio de 2022</p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2 class="fw_bolder fs-1 text-uppercased">RAP LINE</h2>
-                <img src="./assets/rap-line.jpg" class="w-100" alt="linea de raperos">
+            <div data-aos="fade-right" class="solista">
+                <img src="./assets/jimin-solista.jpg" alt=" album face de jimin">
+                <div class="texto-uno">
+                    <h2 class="text-center">face</h2>
+                    <p>24 de Marzo de 2023</p>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 col-lg-6">
-                <h2 class="fw_bolder fs-1 text-uppercased">VOCAL LINE</h2>
-                <img src="./assets/vocal-line.jpg" class="w-100" alt="linea de vocalistas">
+            <div data-aos="fade-right" class="solista">
+                <img src="./assets/jin-solista.jpg" alt="album the astonaut de jin">
+                <div class="texto-uno">
+                    <h2 class="text-center">the astronaut</h2>
+                    <p>28 de Octubre de 2022</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="solista">
+                <img src="./assets/jungkook-solista.jpg" alt="album seven de jungkook">
+                <div class="texto-uno">
+                    <h2 class="text-center">seven</h2>
+                    <p>29 de Octubre de 2023</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="solista">
+                <img src="./assets/rm-solista.jpg" alt="album indigo de namjoon">
+                <div class="texto-uno">
+                    <h2 class="text-center">indigo</h2>
+                    <p>2 de Diciembre de 2022</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="solista">
+                <img src="./assets/suga-rap.jpg" alt="album dday de suga">
+                <div class="texto-uno">
+                    <h2 class="text-center">DDay</h2>
+                    <p>21 de Abril de 2023</p>
+                </div>
+            </div>
+            <div data-aos="fade-right" class="solista">
+                <img src="./assets/taehyung-solista.jpg" alt="album layover de taehyung">
+                <div class="texto-uno">
+                    <h2 class="text-center">layover</h2>
+                    <p>8 de Septiembre de 2023</p>
+                </div>
             </div>
         </section>
     </main>
     <footer class="footer mt-5">
         <section class="logo-footer mt-3">
             <div>
-                <a href="./index.html"> <img src="./assets/BTS_logo.svg.png" alt=" logo de bts"> </a>
+                <a href="./index.html"> <img src="./assets/logo-bts.png" alt="logo de bts"> </a>
             </div>
         </section>
         <section class="contactos mt-3">
@@ -96,7 +148,7 @@
                 </a>
             </div>
         </section>
-        <section class="mt-3">
+        <section class="privacidad mt-3">
             <p class="copyright text-center">Serena Fernández © 2023</p>
             <a class="icon-link mt-1" href="#">
                 <svg class="bi" aria-hidden="true">
@@ -106,7 +158,14 @@
             </a>
         </section>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <!-- libreria aos -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

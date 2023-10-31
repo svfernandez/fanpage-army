@@ -1,109 +1,207 @@
-@media screen and (max-width: 991px){
-    .menu{
+@media screen and (max-width: 890px) {
+    .menu {
         top: 150px;
         width: 100vw;
+    }
 }
-}
-@media screen and (min-width: 768px){
-    header{
+
+@media screen and (min-width: 768px) {
+    header {
         flex-direction: row;
-        nav{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            gap: 10px;
+
+        nav {
+            div {
+                a {
+                    img {
+                        width: 50px;
+                        height: 75px;
+                    }
+                }
+            }
+
+            ul {
+                font-size: large;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                gap: 10px;
+            }
         }
     }
+
     /*main about*/
-    .main-about{
-        section{
-            p{
+    .main-about {
+        section {
+            p {
                 font-size: 1.5em;
             }
         }
-        .solistas{
-            h3{
-            font-size: 1.5em;
+
+        .solistas {
+            h3 {
+                font-size: 1.5em;
             }
         }
     }
+
+    /*main merch*/
+    .main-merch {
+        font-size: 2rem;
+
+        .encabezado-merch {
+            margin-top: 10px;
+
+            h1 {
+                text-transform: uppercase;
+            }
+
+            h1 {
+                text-transform: uppercase;
+            }
+        }
+
+        .productos {
+            display: flex;
+            margin-top: 5px;
+            @include flex(row, wrap, center, center);
+            gap: 15px;
+
+            .card-body {
+                .buttom {
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+
     /*main discografia*/
-    .main-discografia{
-        section{
-            font-size: 1em;
-            h1{
+    .main-discografia {
+        .discord {
+            font-size: 1.4em;
+
+            h1 {
                 padding-top: 7px;
             }
-            .album{
-                .cover{
-                    h2{
+
+            .album {
+                .cover {
+                    h2 {
                         font-weight: 600;
                     }
                 }
             }
         }
 
-        .spotify {                
+        .spotify {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
             padding: 5px;
-            .canal{
+
+            .canal {
                 background-image: linear-gradient(to right, pink, lightgrey);
                 border-radius: 12px;
-                p{
-                    font-size: 1em;
+
+                p {
+                    font-size: 1.4em;
                 }
             }
-            div{
-                iframe{
-                    align-items: center;
-                    padding: 5px;
-                    width: 350px;
-                    height: 250px;
+
+            .padre-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding: 5px;
+
+                div {
+                    iframe {
+                        align-items: center;
+                        padding: 5px;
+                        width: 350px;
+                        height: 250px;
+                    }
                 }
             }
         }
     }
 
     /*main army*/
-    .main-army{
-        .contenedor-army{
-            font-weight: 700;
-            font-size: 1em;
-            height: auto;
-            p{
-                padding: 30px;
+    .main-army {
+        .proyectos {
+            font-size: large;
+
+            a {
+                img {
+                    width: 450px;
+                    height: 600px;
+                }
             }
         }
-        .contenedor-flex{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-evenly;
-            gap: 10px;
-        }
-
     }
 
     /*contacto*/
-    .main-contacto{
-        min-height: 600px;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: 15px;
-        align-items: center;
-        font-size: 1em;
+    .main-contacto {
+        font-size: 2em;
+        .container{
+            align-items: center;
+            form{
+                .form-group{
+                    input{
+                        font-size: 1em;
+                    }
+                }
+                div{
+                    .buttom{
+                        font-size: 1em;
+                    }
+                }
+            }
         }
-        .invitacion{
-            font-weight: 650;
-            padding: 20px;
+    }
+
+    /*footer*/
+.footer {
+    .contactos {
+        .redes {
+            img {
+                width: 40px;
+                height: 40px;
+            }
         }
-        .formulario{
-            width: 500px;
-            height: 100vw;
-            margin: 40px;
+    }
+
+    .privacidad {
+        font-size: medium;
+    }
+}
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-discografia {
+        .spotify {
+            .canal {
+                text-align: start;
+                max-inline-size: 350px;
+            }
+
+            .padre-grid {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding: 5px;
+
+                div {
+                    iframe {
+                        align-items: center;
+                        padding: 5px;
+                        width: 350px;
+                        height: 250px;
+                    }
+                }
+            }
         }
+    }
 }

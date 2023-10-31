@@ -4,11 +4,13 @@
 @import "utilities/variables";
 @import "utilities/lists";
 @import "utilities/styles-global";
+@import "utilities/mixins";
 
 
 @import "componentes/header";
 
 @import "pages/main-about";
+@import "pages/main-merch";
 @import "pages/main-discografia";
 @import "pages/main-army";
 @import "pages/main-contacto";

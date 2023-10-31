@@ -1,0 +1,67 @@
+.main-merch{
+    h1{
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 10px;
+        font-weight: bolder;
+    }
+    h3{
+        font-weight: bold;
+        font-style: italic;
+        text-align: center;
+    }
+    .carousel-item{
+        margin-bottom: 5px;
+        padding: 10px;
+        background-color: nth($list: $colores, $n: 6);
+        img{
+            width: 30px;
+            height: 30px;
+        }
+        h2{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
+    }
+    .productos{
+        display: flex;
+        @include flex(row, wrap, center, center);
+        .card{
+            padding: 10px;
+            border: none;
+            background-color: nth($list: $colores, $n: 4);
+            width: 75px;
+            height: 100%;
+            .card-title{
+                text-transform: uppercase;
+                text-align: center;
+                padding-top: 2px;
+                font-weight: bolder;
+            }
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        .card-body{
+            text-align: start;
+            font-weight: lighter;
+            .precio{
+                font-weight: bolder;
+                color: nth($list: $colores, $n: 7);
+            }
+            span{
+                font-style: oblique;
+            }
+            .buttom{
+                margin: 5px;
+                background-image: $gradiante;
+                font-weight: 600;
+                align-items: center;
+            }
+        }
+        }
+    }
+
+}
