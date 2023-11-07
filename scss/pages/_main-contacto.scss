@@ -28,9 +28,9 @@
                 padding: 7px;
                 div{
                     .buttom{
-                        width: 60px;
+                        width: 100px;
                         height: 100%;
-                        background-color: nth($list: $colores, $n: 4);
+                        background-color: nth($list: $colores, $n: 6);
                     }
                 }
             }

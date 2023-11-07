@@ -313,9 +313,9 @@ header nav .menu .menu-ul li a {
   padding: 7px;
 }
 .main-contacto .container form .form-group div .buttom {
-  width: 60px;
+  width: 100px;
   height: 100%;
-  background-color: rgb(241, 238, 238);
+  background-color: rgba(199, 179, 199, 0.568);
 }
 
 /*footer*/
@@ -401,9 +401,11 @@ header nav .menu .menu-ul li a {
   }
   /*main discografia*/
   .main-discografia .discord {
-    font-size: 1.4em;
+    font-size: 2em;
+    text-align: start;
   }
   .main-discografia .discord h1 {
+    font-style: italic;
     padding-top: 7px;
   }
   .main-discografia .discord .album .cover h2 {
