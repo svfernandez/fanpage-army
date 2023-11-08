@@ -47,6 +47,7 @@ header nav .menu .menu-ul li a {
   font-family: "Poppins", sans-serif;
 }
 .main-about section {
+  padding-top: 15px;
   font-size: 1.5rem;
 }
 .main-about section h1 {
@@ -249,6 +250,20 @@ header nav .menu .menu-ul li a {
 .main-army {
   font-family: "Poppins", sans-serif;
 }
+.main-army div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.main-army div h3 {
+  text-align: center;
+  font-weight: 700;
+  font-style: italic;
+  padding: 5px;
+}
 .main-army .proyectos {
   font-size: 1.2em;
   display: flex;
@@ -289,13 +304,19 @@ header nav .menu .menu-ul li a {
   min-height: 655px;
   font-size: 1.3em;
 }
-.main-contacto h1 {
+.main-contacto section {
+  background-color: rgb(197, 193, 197);
+  margin: 25px;
+  border-radius: 4px;
+}
+.main-contacto section h1 {
   text-align: center;
   font-weight: bolder;
   font-style: italic;
-  margin: 25px;
-  background-color: rgb(197, 193, 197);
-  border-radius: 4px;
+}
+.main-contacto section p {
+  text-align: center;
+  font-weight: 500;
 }
 .main-contacto .container {
   background-image: linear-gradient(to right, rgb(252, 199, 208), lightgrey);
@@ -439,6 +460,21 @@ header nav .menu .menu-ul li a {
     height: 250px;
   }
   /*main army*/
+  .main-army div {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .main-army div h3 {
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+    margin: 15px;
+  }
   .main-army .proyectos {
     font-size: large;
   }

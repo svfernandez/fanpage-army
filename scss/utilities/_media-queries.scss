@@ -131,6 +131,21 @@
 
     /*main army*/
     .main-army {
+        div{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            h3{
+                font-size: 3em;
+                text-align: center;
+                font-weight: 700;
+                font-style: italic;
+                margin: 15px;
+            }
+        }
         .proyectos {
             font-size: large;
 

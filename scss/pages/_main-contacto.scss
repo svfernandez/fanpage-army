@@ -4,13 +4,19 @@
     font-family: $font-family-principal;
     min-height: 655px;
     font-size: 1.3em;
-    h1{
-        text-align: center;
-        font-weight: bolder;
-        font-style: italic;
-        margin: 25px;
+    section{
         background-color: nth($list: $colores, $n: 5);
+        margin: 25px;
         border-radius: 4px;
+        h1{
+            text-align: center;
+            font-weight: bolder;
+            font-style: italic;
+        }
+        p{
+            text-align: center;
+            font-weight: 500;
+        }
     }
     .container{
         background-image: $gradiante;
