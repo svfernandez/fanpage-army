@@ -1,17 +1,19 @@
-/*footer*/
 /*footer general*/
 .footer{
     background-image: linear-gradient(to right, pink, rgb(202, 200, 200));
+    /*logo link*/
     .logo-footer{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
         justify-items: center;
+        padding-top: 15px;
         img{
             width: 35px;
             height: 50px;
         }
     }
+    /*redes sociales*/
     .contactos{
         display: flex;
         flex-direction: row;
